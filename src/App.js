@@ -124,7 +124,9 @@ async function sendEmail({ nombre, email, numeros, total }) {
     <div style="background:#fff;border-radius:12px;padding:20px;margin:20px 0;border:1px solid #e0d5c0;">
       <div style="margin-bottom:10px;font-size:14px;"><strong>🔢 Tus números:</strong><br><span style="color:#c9a84c;font-family:monospace;font-size:13px;">${numsStr}</span></div>
       <div style="margin-bottom:10px;font-size:14px;"><strong>💰 Total:</strong> ${formatCLP(total)}</div>
-      <div style="margin-bottom:10px;font-size:14px;"><strong>🎁 Premio:</strong> ${CONFIG.premio}</div>
+      <div style="margin-bottom:10px;font-size:14px;"><strong>🎁 Premio 1:</strong> ${CONFIG.premio1}</div>
+      <div style="margin-bottom:10px;font-size:14px;"><strong>🎁 Premio 2:</strong> ${CONFIG.premio2}</div>
+      <div style="margin-bottom:10px;font-size:14px;"><strong>🎁 Premio 3:</strong> ${CONFIG.premio3}</div>
       <div style="font-size:14px;"><strong>📅 Sorteo:</strong> ${CONFIG.fechaSorteo}</div>
     </div>
     <p style="color:#e67e22;font-size:13px;background:#fff8e1;padding:12px;border-radius:8px;">⏳ <strong>Estado actual:</strong> Pendiente de verificación de pago</p>
