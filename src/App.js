@@ -191,7 +191,7 @@ export default function App() {
             <span style={S.cross}>✝</span>
             <div>
               <div style={S.brandName}>{CONFIG.nombreIglesia}</div>
-              <div style={S.brandSub}>Rifa Benéfica · {CONFIG.fechaSorteo.split(",")[1]?.trim() ?? "2026"}</div>
+              <div style={S.brandSub}>RIFA BENÉFICA CONTRUCCIÓN NUEVO TEMPLO · {CONFIG.fechaSorteo.split(",")[1]?.trim() ?? "2026"}</div>
             </div>
           </div>
           <button style={S.navBtn} onClick={()=>setView(view==="rifa"?"admin":"rifa")}>
@@ -358,8 +358,8 @@ function SelectView({tomados, selected, toggle, total, onContinue}) {
       <div style={S.hero} className="fade">
         <div style={S.heroBadge}>✝ RIFA BENÉFICA</div>
         <h1 style={S.heroTitle}>{CONFIG.premio1}</h1>
-        <h2 style={S.heroSubtitle}>{CONFIG.premio2}</h2>
-        <h3 style={S.heroSubsubtitle}>{CONFIG.premio3}</h3>
+        <h2 style={S.heroTitle}>{CONFIG.premio2}</h2>
+        <h3 style={S.heroTitle}>{CONFIG.premio3}</h3>
         <p style={S.heroDate}>Sorteo: {CONFIG.fechaSorteo}</p>
 
         {/* Progress bar */}
