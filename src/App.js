@@ -34,7 +34,7 @@ const CONFIG = {
   // 2. Settings → API Keys → Create API Key
   // 3. Domains → Add Domain (o usa el dominio de prueba @resend.dev)
   resendApiKey: "re_LViYq1tr_6UywE63tXwJfEQUNezGzyjYU",
-  resendFromEmail: "onboarding@resend.dev",
+  resendFromEmail: "rifa@impquintanormal.cl",
 };
 // ─────────────────────────────────────────────────────────────────────────────
 
