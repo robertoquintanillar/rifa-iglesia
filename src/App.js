@@ -356,7 +356,7 @@ function SelectView({tomados, selected, toggle, total, onContinue}) {
     <main style={S.main}>
       {/* Hero */}
       <div style={S.hero} className="fade">
-        <div style={S.heroBadge}>✝ RIFA BENÉFICA</div>
+        <div style={S.heroBadge}>✝ RIFA BENÉFICA CONTRUCCIÓN NUEVO TEMPLO</div>
         <h1 style={S.heroTitle}>{CONFIG.premio1}</h1>
         <h2 style={S.heroTitle}>{CONFIG.premio2}</h2>
         <h3 style={S.heroTitle}>{CONFIG.premio3}</h3>
