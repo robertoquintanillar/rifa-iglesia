@@ -35,6 +35,14 @@ const CONFIG = {
   // 3. Domains → Add Domain (o usa el dominio de prueba @resend.dev)
   resendApiKey: "re_LViYq1tr_6UywE63tXwJfEQUNezGzyjYU",
   resendFromEmail: "rifa@impquintanormal.cl",
+
+    // ─── NUEVA SECCIÓN DE COLORES ─────────────────────────────────────────────
+  colores: {
+    primario: "#0B3B7B", // Azul Institucional
+    acento: "#BE2329",   // Rojo Acento
+    fondo: "#FFFFFF",   // Blanco
+    textoHeader: "#FFFFFF" // Texto blanco sobre fondo azul
+  },
 };
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -187,7 +195,12 @@ export default function App() {
       <nav style={S.nav}>
         <div style={S.navIn}>
           <div style={S.brand} onClick={()=>setView("rifa")}>
-            <span style={S.cross}>✝</span>
+            {/* Escudo oficial de la iglesia en la barra superior */}
+            <img 
+              src="/logo-iglesia.png" 
+              alt="Logo IMP QN" 
+              style={{ height: "42px", width: "42px", objectFit: "contain" }} 
+            />
             <div>
               <div style={S.brandName}>{CONFIG.nombreIglesia}</div>
               <div style={S.brandSub}>RIFA BENÉFICA CONTRUCCIÓN NUEVO TEMPLO · {CONFIG.fechaSorteo.split(",")[1]?.trim() ?? "2026"}</div>
@@ -355,7 +368,13 @@ function SelectView({tomados, selected, toggle, total, onContinue}) {
     <main style={S.main}>
       {/* Hero */}
       <div style={S.hero} className="fade">
-        <div style={S.heroBadge}>✝ RIFA BENÉFICA CONTRUCCIÓN NUEVO TEMPLO</div>
+        {/* Escudo central destacado */}
+        <img 
+          src="/logo-iglesia.png" 
+          alt="Escudo Oficial IMP Quinta Normal" 
+          style={{ width: "130px", height: "130px", margin: "0 auto 16px", display: "block", objectFit: "contain" }} 
+        />
+        <div style={S.heroBadge}>RIFA BENÉFICA CONTRUCCIÓN NUEVO TEMPLO</div>
         <h1 style={S.heroTitle}>{CONFIG.premio1}</h1>
         <h2 style={S.heroTitle}>{CONFIG.premio2}</h2>
         <h3 style={S.heroTitle}>{CONFIG.premio3}</h3>
