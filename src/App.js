@@ -134,14 +134,13 @@ async function sendEmail({ nombre, email, numeros, total }) {
     <p style="color:#bbb;font-size:11px;text-align:center;">${CONFIG.nombreIglesia} · Dios te bendiga 🙏</p>
   </div>
 </div>`;
-    await fetch("https://api.resend.com/emails", {
-      method:"POST",
-      headers:{ "Content-Type":"application/json", Authorization:`Bearer ${CONFIG.resendApiKey}` },
-      body:JSON.stringify({
-        from: `${CONFIG.nombreIglesia} <${CONFIG.resendFromEmail}>`,
-        to: [email],
-        subject: `✝️ Participación recibida — Rifa ${CONFIG.nombreIglesia}`,
-        html
+    await fetch("/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        email: email,
+        nombreIglesia: CONFIG.nombreIglesia,
+        html: html
       })
     });
   } catch(e) { console.warn("Email error:", e); }
