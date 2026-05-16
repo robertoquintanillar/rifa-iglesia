@@ -6,8 +6,10 @@ import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 const CONFIG = {
   totalNumeros: 2000,
   precioPorNumero: 3000,
-  premio: "Auto Chevrolet Spark 2026",
-  fechaSorteo: "20 de Diciembre, 2026",
+  premio1: "Refrigerador Samsung 253L",
+  premio2: "Televisor LG 55 pulgadas",
+  premio3: "Licuadora Oster",
+  fechaSorteo: "15 septiembre del 2026",
   maxPorPersona: 50,
   nombreIglesia: "Iglesia Metodista Pentecostal de Quinta Normal",
 
@@ -114,7 +116,7 @@ async function sendEmail({ nombre, email, numeros, total }) {
   <div style="background:#0d1b3e;padding:28px;text-align:center;">
     <div style="font-size:36px;color:#c9a84c;">✝</div>
     <h2 style="color:#fff;margin:8px 0 0;font-size:20px;">${CONFIG.nombreIglesia}</h2>
-    <p style="color:rgba(255,255,255,0.55);margin:4px 0 0;font-size:12px;letter-spacing:2px;">RIFA BENÉFICA 2026</p>
+    <p style="color:rgba(255,255,255,0.55);margin:4px 0 0;font-size:12px;letter-spacing:2px;">RIFA BENÉFICA CONTRUCCIÓN NUEVO TEMPLO</p>
   </div>
   <div style="padding:28px;">
     <h3 style="color:#0d1b3e;margin:0 0 12px;">¡Hola, ${nombre.split(" ")[0]}! 🎉</h3>
