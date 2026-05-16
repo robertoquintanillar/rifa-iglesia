@@ -357,7 +357,9 @@ function SelectView({tomados, selected, toggle, total, onContinue}) {
       {/* Hero */}
       <div style={S.hero} className="fade">
         <div style={S.heroBadge}>✝ RIFA BENÉFICA</div>
-        <h1 style={S.heroTitle}>{CONFIG.premio}</h1>
+        <h1 style={S.heroTitle}>{CONFIG.premio1}</h1>
+        <h2 style={S.heroSubtitle}>{CONFIG.premio2}</h2>
+        <h3 style={S.heroSubsubtitle}>{CONFIG.premio3}</h3>
         <p style={S.heroDate}>Sorteo: {CONFIG.fechaSorteo}</p>
 
         {/* Progress bar */}
@@ -596,7 +598,9 @@ function SuccessView({nombre,email,numeros,total,onReset}) {
           {numeros.length>20&&<span style={{...S.successNum,background:"#eee",color:"#999"}}>+{numeros.length-20} más</span>}
         </div>
         <div style={S.infoBox}>
-          <div>🎁 <strong>{CONFIG.premio}</strong></div>
+          <div>🎁 <strong>{CONFIG.premio1}</strong></div>
+          <div>🎁 <strong>{CONFIG.premio2}</strong></div>
+          <div>🎁 <strong>{CONFIG.premio3}</strong></div>
           <div>📅 <strong>{CONFIG.fechaSorteo}</strong></div>
           <div>💰 Total: <strong>{formatCLP(total)}</strong></div>
           <div>🔢 {numeros.length} número{numeros.length>1?"s":""} reservado{numeros.length>1?"s":""}</div>
