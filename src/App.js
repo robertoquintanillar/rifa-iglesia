@@ -5,32 +5,34 @@ import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 // ─────────────────────────────────────────────────────────────────────────────
 const CONFIG = {
   totalNumeros: 2000,
-  precioPorNumero: 2000,
+  precioPorNumero: 3000,
   premio: "Auto Chevrolet Spark 2026",
   fechaSorteo: "20 de Diciembre, 2026",
   maxPorPersona: 50,
-  nombreIglesia: "Iglesia Vida Nueva",
+  nombreIglesia: "Iglesia Metodista Pentecostal de Quinta Normal",
 
-  banco: "Banco Estado",
+  nombreCuenta: "Marcela Valdés",
+  rutCuenta: "13562069-6",
+  banco: "Scotiabank",
   tipoCuenta: "Cuenta Corriente",
-  numeroCuenta: "12345678",
-  nombreCuenta: "Iglesia Evangelica Vida Nueva",
-  rutCuenta: "70.123.456-7",
-
-  whatsappAdmin: "56912345678",
-  emailAdmin: "admin@iglesiavidanueva.cl",
+  numeroCuenta: "975973239",
+  Motivo : "Pago números xxx"
+  MailAviso : "mb.valdes.avila@gmail.com"
+  
+  whatsappAdmin: "56992191358",
+  emailAdmin: "quintanormal,imp@gmail.com",
   adminPassword: "iglesia2026",
 
   // ─── SUPABASE ─────────────────────────────────────────────────────────────
-  supabaseUrl: "https://TU_PROYECTO.supabase.co",
-  supabaseKey: "TU_ANON_KEY",
+  supabaseUrl: "https://xqlormiovdxzfihkcxwy.supabase.co",
+  supabaseKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhxbG9ybWlvdmR4emZpaGtjeHd5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg4NzM5ODksImV4cCI6MjA5NDQ0OTk4OX0.eFAfMmlwJo-obojSnr5ROzBdqc6DE4mcD0TpmAtqrz4",
 
   // ─── RESEND (correos — 3.000/mes gratis) ──────────────────────────────────
   // 1. Ve a https://resend.com → crea cuenta
   // 2. Settings → API Keys → Create API Key
   // 3. Domains → Add Domain (o usa el dominio de prueba @resend.dev)
-  resendApiKey: "re_TU_API_KEY",
-  resendFromEmail: "rifa@iglesiavidanueva.cl",
+  resendApiKey: "re_LViYq1tr_6UywE63tXwJfEQUNezGzyjYU",
+  resendFromEmail: "rifa@impquintanormal.cl",
 };
 // ─────────────────────────────────────────────────────────────────────────────
 
