@@ -16,8 +16,8 @@ const CONFIG = {
   banco: "Scotiabank",
   tipoCuenta: "Cuenta Corriente",
   numeroCuenta: "975973239",
-  Motivo : "Pago números xxx"
-  MailAviso : "mb.valdes.avila@gmail.com"
+  Motivo : "Pago números xxx",
+  MailAviso : "mb.valdes.avila@gmail.com",
   
   whatsappAdmin: "56992191358",
   emailAdmin: "quintanormal,imp@gmail.com",
